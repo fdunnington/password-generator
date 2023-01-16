@@ -1,6 +1,6 @@
 # Module 5 Challenge: Password Generator
 
-##https://fdunnington.github.io/password-generator/
+## https://fdunnington.github.io/password-generator/
 
 ![password generator demo](./assets/05-javascript-challenge-demo.png)
 
