@@ -162,7 +162,46 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
-    
+  let options = getPasswordOptions();
+
+  let result = [];
+
+  let possibleCharacters = [];
+
+  let guaranteedCharacters = [];
+
+  // These if statements determine which of the possible characters
+  // are to be included in the generated password. They draw on the
+  // boolean output of the 'confirm' statments (true or false that
+  // user has chosen to include them). Where true
+  if(options.incSpecialCharacters) {
+    possibleCharacters = possibleCharacters.concat(specialCharacters);
+    guaranteedCharacters.push(getRandom(specialCharacters));
+  };
+  if(options.incNumbers) {
+    possibleCharacters = possibleCharacters.concat(numericCharacters);
+    guaranteedCharacters.push(getRandom(numericCharacters));
+  };
+  if(options.incUppercaseLetters) {
+    possibleCharacters = possibleCharacters.concat(upperCasedCharacters);
+    guaranteedCharacters.push(getRandom(upperCasedCharacters));
+  };
+  if(options.incLowercaseLetters) {
+    possibleCharacters = possibleCharacters.concat(lowerCasedCharacters);
+    guaranteedCharacters.push(getRandom(lowerCasedCharacters));
+  };
+
+  console.log(possibleCharacters);
+  console.log(guaranteedCharacters);
+
+  // This loops through the options array (which is equal to the output of the
+  // getPasswordOptions() function)
+  for (i = 0; i < options.length; i++) {
+    var generatedPassword = getRandom(guaranteedCharacters);
+    result.push(generatedPassword);
+  };
+
+  return result.join('');
 }
 
 //ignore everything below this line
