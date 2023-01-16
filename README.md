@@ -2,7 +2,7 @@
 
 ## https://fdunnington.github.io/password-generator/
 
-![password generator demo](./assets/05-javascript-challenge-demo.png)
+![password generator demo](./assets/images/05-javascript-challenge-demo.png)
 
 ## Overview
 
