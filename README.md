@@ -1,6 +1,8 @@
 # Module 5 Challenge: Password Generator
 
-##Deployed project: http://fi.dunnington.github.io/password-generator
+##https://fdunnington.github.io/password-generator/
+
+![password generator demo](./assets/05-javascript-challenge-demo.png)
 
 ## Overview
 
@@ -12,7 +14,6 @@ The password can include special characters. If you’re unfamiliar with these, 
 
 The following image shows the web application's appearance and functionality:
 
-![password generator demo](./assets/05-javascript-challenge-demo.png)
 
 
 * Generate a password when the button is clicked
