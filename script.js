@@ -130,6 +130,13 @@ function getPasswordOptions() {
 
   let incNumbers = confirm (
     "Include numbers?");
+  
+    
+  //This is a check to ensure at least one accepted character type included
+  if (incSpecialCharacters === false && incUppercaseLetters === false && incLowercaseLetters === false && incNumbers ===false) {
+    alert('Pick at least one character type to include');
+    return;
+  };
 
   // Object to organise all user inputs
   let passwordOptions = {
