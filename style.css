@@ -27,7 +27,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(204, 25%, 35%);
 }
 
 .card {
@@ -35,8 +35,8 @@ header {
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
+  color: hsl(204, 25%, 35%);
+  font-size: 16px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
@@ -48,6 +48,10 @@ header {
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+}
+
+.card h2 {
+  text-align: center;
 }
 
 .card-body {
@@ -74,7 +78,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(157, 14, 57);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -86,6 +90,11 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: rgba(74, 38, 38, 0.224) 0px 0px 6px 5px;
+  transition: ease-in-out 300ms;
 }
 
 button[disabled] {
