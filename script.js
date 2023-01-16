@@ -204,7 +204,7 @@ function generatePassword() {
   // This loops through the options array (which is equal to the output of the
   // getPasswordOptions() function)
   for (i = 0; i < options.length; i++) {
-    var generatedPassword = getRandom(guaranteedCharacters);
+    var generatedPassword = getRandom(possibleCharacters);
     result.push(generatedPassword);
   };
 
