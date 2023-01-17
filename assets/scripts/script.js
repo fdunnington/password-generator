@@ -201,7 +201,7 @@ function generatePassword() {
   };
 
   
-  alert (result.join('')); // alerts user of generated password
+  alert ('Your generated password is: ' + result.join('')); // alerts user of generated password
   return result.join(''); // logs generated password to password box. Return must come after alert to work
 }
 
